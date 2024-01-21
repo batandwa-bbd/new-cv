@@ -31,6 +31,12 @@ body {
   height: 15rem;
   border-radius: 50%;
   animation: imageRotateEnter 3s ease-in-out;
+  animation-delay: 2s;
+}
+
+.profile-image:hover {
+  animation-play-state: running;
+  animation-iteration-count: infinite;
 }
 
 .main-header-title {
