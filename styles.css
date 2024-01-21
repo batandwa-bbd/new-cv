@@ -28,23 +28,26 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+  animation: imageRotateEnter 3s ease-in-out;
 }
 
 .main-header-title {
   color: white;
   font-size: 2.5rem;
   font-weight: 800;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .main-header-body {
-    color: #CECECE;
-    font-size: 2.5rem;
-    font-weight: 400;
-    text-align: center;
+  color: #cecece;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .main-header-body {
-  color: #CECECE;
+  color: #cecece;
   font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
@@ -68,10 +71,54 @@ body {
 
 .info-card {
   border-radius: 0.75rem;
-  border: 2px solid #BDBDBD;
+  border: 2px solid #bdbdbd;
   background: white;
   padding: 1rem;
   width: 80%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes imageRotateEnter {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  90% {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
