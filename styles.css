@@ -16,7 +16,7 @@ body {
   cursor: url("assets/cursor.png"), auto;
 }
 
-.main-header {
+header {
   background: rgba(0, 0, 0, 0.48);
   width: 100%;
   height: 100vh;
@@ -26,7 +26,7 @@ body {
   justify-content: center;
 }
 
-.profile-image {
+header img {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
@@ -34,19 +34,19 @@ body {
   animation-delay: 2s;
 }
 
-.profile-image:hover {
+header img:hover {
   animation-play-state: running;
   animation-iteration-count: infinite;
 }
 
-.main-header-title {
+header h1 {
   color: white;
   font-size: 2.5rem;
   font-weight: 800;
   animation: fadeIn 1s ease-in-out;
 }
 
-.main-header-body {
+header p {
   color: #cecece;
   font-size: 2.5rem;
   font-weight: 400;
@@ -54,15 +54,7 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
-.main-header-body {
-  color: #cecece;
-  font-size: 2.5rem;
-  font-weight: 400;
-  text-align: center;
-  width: 80%;
-}
-
-.main-body {
+main {
   background: rgba(255, 255, 255, 0.81);
   display: flex;
   flex-direction: column;
@@ -70,14 +62,14 @@ body {
   padding-bottom: 14rem;
 }
 
-.main-body-title {
+main h1 {
   color: #222;
   font-size: 4rem;
   font-weight: 400;
   height: 2rem;
 }
 
-.info-card {
+main article {
   border-radius: 0.75rem;
   border: 2px solid #bdbdbd;
   background: white;
@@ -90,7 +82,15 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
-.info-card:hover {
+main article h1,
+h2,
+h3,
+p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+main article:hover {
   transform: scale(1.1);
 }
 
@@ -127,4 +127,3 @@ body {
     height: 15rem;
   }
 }
-
